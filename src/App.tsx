@@ -1,4 +1,5 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import logo from "./logo.svg";
 import "./App.css";
 import Layout from "./components/layout";
@@ -6,7 +7,11 @@ import Layout from "./components/layout";
 function App() {
   return (
     <Layout>
-      <div className="App">hi</div>
+      <Router>
+        <Routes>
+          <Route path="/" />
+        </Routes>
+      </Router>
     </Layout>
   );
 }

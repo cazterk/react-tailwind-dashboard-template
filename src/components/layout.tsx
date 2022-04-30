@@ -1,3 +1,4 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Sidebar from "./sidebar";
 
 const Layout = ({ children }: any) => {
@@ -5,7 +6,12 @@ const Layout = ({ children }: any) => {
     <div>
       <div className="flex h-screen">
         <Sidebar />
-        <div className="flex-auto bg-green-200 ">{children}</div>
+        {/* <Router>
+          <Routes>
+            <Route path="/" />
+          </Routes>
+        </Router> */}
+        {/* <div className="flex-auto bg-green-200 ">{children}</div> */}
       </div>
     </div>
   );
