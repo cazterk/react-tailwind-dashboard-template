@@ -2,6 +2,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import * as MdIcons from "react-icons/md";
+import * as HiIcons from "react-icons/hi";
 
 export const SidebarData = [
   {
@@ -18,6 +19,11 @@ export const SidebarData = [
     title: "Contact",
     path: "/contact",
     icon: <MdIcons.MdPermContactCalendar />,
+  },
+  {
+    title: "Forms",
+    path: "/forms",
+    icon: <HiIcons.HiDocumentAdd />,
   },
   {
     title: "Settings",
